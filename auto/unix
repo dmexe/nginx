@@ -962,3 +962,12 @@ ngx_feature_test='struct addrinfo *res;
                   if (getaddrinfo("localhost", NULL, NULL, &res) != 0) return 1;
                   freeaddrinfo(res)'
 . auto/feature
+
+ngx_feature="systemtap"
+ngx_feature_name="NGX_HAVE_SYSTEMTAP"
+ngx_feature_run=no
+ngx_feature_incs="#include <sys/sdt.h>"
+ngx_feature_path=
+ngx_feature_libs=
+ngx_feature_test=
+. auto/feature

@@ -42,6 +42,7 @@ EVENT_SELECT=NO
 EVENT_POLL=NO
 
 USE_THREADS=NO
+USE_SYSTEMTAP=NO
 
 NGX_FILE_AIO=NO
 
@@ -201,6 +202,7 @@ do
         --without-poll_module)           EVENT_POLL=NONE            ;;
 
         --with-threads)                  USE_THREADS=YES            ;;
+        --with-systemtap)                USE_SYSTEMTAP=YES          ;;
 
         --with-file-aio)                 NGX_FILE_AIO=YES           ;;
 
@@ -425,6 +427,7 @@ cat << END
   --without-poll_module              disable poll module
 
   --with-threads                     enable thread pool support
+  --with-systemtap                   enable systemtap support
 
   --with-file-aio                    enable file AIO support
 

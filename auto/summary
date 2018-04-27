@@ -11,6 +11,10 @@ if [ $USE_THREADS = YES ]; then
     echo "  + using threads"
 fi
 
+if [ $USE_SYSTEMTAP = YES ]; then
+    echo "  + using systemtap"
+fi
+
 if [ $USE_PCRE = DISABLED ]; then
     echo "  + PCRE library is disabled"
 
